@@ -1,0 +1,24 @@
+{
+    "name": "augustash/module-better-catalog-url",
+    "description": "Magento 2 URL Key Improvement Module",
+    "license": [
+        "MIT"
+    ],
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "require": {
+        "magento/module-catalog": "*",
+        "magento/module-catalog-url-rewrite": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Augustash\\BetterCatalogUrl\\": "src/"
+        },
+        "files": [
+            "src/registration.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

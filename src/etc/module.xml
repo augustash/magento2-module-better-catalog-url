@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Catalog Url Improvements Module
+ *
+ * @author    Peter McWilliams <pmcwilliams@augustash.com>
+ * @copyright Copyright (c) 2022 August Ash (https://www.augustash.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Augustash_BetterCatalogUrl">
+        <sequence>
+            <module name="Magento_Catalog"/>
+            <module name="Magento_CatalogUrlRewrite"/>
+        </sequence>
+    </module>
+</config>

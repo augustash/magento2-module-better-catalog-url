@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Catalog Url Improvements Module
+ *
+ * @author    Peter McWilliams <pmcwilliams@augustash.com>
+ * @copyright Copyright (c) 2022 August Ash (https://www.augustash.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\CatalogUrlRewrite\Model\ProductUrlPathGenerator" type="Augustash\BetterCatalogUrl\Model\ProductUrlPathGenerator" />
+</config>
