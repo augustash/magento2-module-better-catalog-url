@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Catalog Url Improvements Module
+ * Product Catalog Url Improvement Module
  *
  * @author    Peter McWilliams <pmcwilliams@augustash.com>
- * @copyright Copyright (c) 2022 August Ash (https://www.augustash.com)
+ * @copyright 2023 August Ash, Inc. (https://www.augustash.com)
  */
 
 declare(strict_types=1);
@@ -14,20 +14,17 @@ namespace Augustash\BetterCatalogUrl\Model;
 use Magento\Catalog\Model\Product;
 use Magento\CatalogUrlRewrite\Model\ProductUrlPathGenerator as ParentClass;
 
-/**
- * Model product URL path generator.
- */
 class ProductUrlPathGenerator extends ParentClass
 {
     /**
-     * Prepare URL key for product
+     * Prepare url key for product.
      *
-     * @param Product $product
+     * @param \Magento\Catalog\Model\Product $product
      * @return string
      */
     protected function prepareProductUrlKey(Product $product): string
     {
-        $urlKey = (string)$product->getUrlKey();
+        $urlKey = (string) $product->getUrlKey();
         $urlKey = \trim(\strtolower($urlKey));
 
         return $product->formatUrlKey($urlKey ?: \sprintf('%s-%s', $product->getName(), $product->getSku()));

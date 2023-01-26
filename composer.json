@@ -1,14 +1,15 @@
 {
     "name": "augustash/module-better-catalog-url",
-    "description": "Magento 2 URL Key Improvement Module",
+    "description": "Magento 2 Better product catalog URL keys",
     "license": [
         "MIT"
     ],
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "require": {
-        "magento/module-catalog": "*",
-        "magento/module-catalog-url-rewrite": "*"
+        "php": ">= 7.4.0",
+        "magento/module-catalog": "@stable",
+        "magento/module-catalog-url-rewrite": "@stable"
     },
     "autoload": {
         "psr-4": {
