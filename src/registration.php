@@ -1,16 +1,18 @@
 <?php
 
 /**
- * Catalog Url Improvements Module
+ * Product Catalog Url Improvement Module
  *
  * @author    Peter McWilliams <pmcwilliams@augustash.com>
- * @copyright Copyright (c) 2022 August Ash (https://www.augustash.com)
+ * @copyright 2023 August Ash, Inc. (https://www.augustash.com)
  */
+
+declare(strict_types=1);
 
 use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
     'Augustash_BetterCatalogUrl',
-    __DIR__
+    __DIR__,
 );
